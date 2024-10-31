@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Obelisco casa de souvenirs</title>
+  <link rel="stylesheet" href="proyectodetalentotech_files/style.css">
+  <link rel="icon" type="image/x-icon" href="imagenes/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .carrusel-container {
+        display: flex; /* Asegura que las imágenes estén en línea */
+        justify-content: space-between; /* Espacio entre las imágenes */
+        margin: 20px 0; /* Espaciado arriba y abajo */
+    }
+
+    .carrusel-imagen {
+        width: 30%; /* Mantiene el ancho de las imágenes */
+        border-radius: 8px; /* Bordes redondeados */
+        transition: transform 0.3s ease; /* Transición suave al escalar */
+    }
+
+    .carrusel-imagen:hover {
+        transform: scale(1.1); /* Escalar la imagen al pasar el mouse */
+        z-index: 1; /* Asegura que la imagen escalada esté en el frente */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sección de presentación -->
+  <header>
+    <h1>Bienvenidos a Nuestro Proyecto</h1>
+    <p>¡Hola!, ¿como están? ¡Este texto es de ejemplo al igual que los demás!</p>
+  </header>
+
+  <!-- Enlaces a otras secciones -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="formulario.html">Formulario de Contacto</a></li>
+      <li><a href="contacto.html">Contáctanos</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="Reseñas.html">Reseñas</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección de Historia del Obelisco -->
+  <section>
+    <h2>Historia del Obelisco</h2>
+    <p>El Obelisco de Buenos Aires, inaugurado el 23 de mayo de 1936, es uno de los símbolos más emblemáticos de la ciudad. Fue construido para conmemorar el cuarto centenario de la primera fundación de Buenos Aires por Pedro de Mendoza.</p>
+    
+    <p>Con una altura de 67,5 metros, fue diseñado por el arquitecto Alberto Prebisch y construido en tiempo récord de tan solo 31 días por la empresa alemana GEOPÉ-Siemens Bauunion-Gruen y Bilfinger.</p>
+    
+    <p>Ubicado en la Plaza de la República, en la intersección de las avenidas Corrientes y 9 de Julio, el Obelisco se ha convertido en el punto de encuentro por excelencia de los porteños y el escenario de numerosas celebraciones deportivas y culturales a lo largo de su historia.</p>
+    
+    <p>Curiosamente, en su interior hay una escalera de 206 escalones y siete descansos que permite llegar hasta la cima, aunque el acceso está restringido al público general. Sus cuatro caras están orientadas hacia los puntos cardinales y cada una tiene una inscripción histórica relevante para la ciudad.</p>
+  </section>
+
+  <!-- Sección de Imágenes y Datos Adicionales del Obelisco -->
+  <section>
+    <h2>El Obelisco en Imágenes</h2>
+    
+    <p>El Obelisco no solo es un monumento histórico, sino también un ícono cultural que ha sido testigo de innumerables eventos y transformaciones de la ciudad:</p>
+    
+    <h2>Galería del Obelisco</h2>
+    <div class="carrusel-container">
+      <img src="imagenes/obeliscoDeDia.jpg" alt="Obelisco durante el día" class="carrusel-imagen">
+      <img src="imagenes/obeliscoDeNoche.jpg" alt="Obelisco iluminado de noche" class="carrusel-imagen">
+      <img src="imagenes/vistaAereaDelObelisco.jpg" alt="Vista aérea del Obelisco" class="carrusel-imagen">
+    </div>
+    
+    <h3>Datos Curiosos</h3>
+    <ul>
+      <li>Las placas en sus caras conmemoran la primera y segunda fundación de Buenos Aires</li>
+      <li>Su base mide 6,80 metros por cada lado</li>
+      <li>Está revestido en piedra calcárea de Córdoba</li>
+      <li>Ha sido intervenido artísticamente en múltiples ocasiones para diferentes celebraciones</li>
+    </ul>
+  </section>
+
+  <!-- Sección de Video -->
+  <section class="video-section">
+    <h2>Video: Historia del Obelisco</h2>
+    <div class="video-container">
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/UiRO_eU-cfk" 
+        title="Historia del Obelisco de Buenos Aires" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
+    </div>
+    <p class="video-description">Video documental sobre la historia y construcción del Obelisco de Buenos Aires, uno de los símbolos más emblemáticos de la ciudad.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Franco Trochi. Todos los derechos reservados.</p>
+    <p>Teléfono: +1 (123) 456-7890 | Email: contacto@ejemplo.com</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com" target="_blank" class="icon instagram">Instagram</a>
+      <a href="https://www.youtube.com" target="_blank" class="icon youtube">YouTube</a>
+      <a href="https://www.facebook.com" target="_blank" class="icon facebook">Facebook</a>
+      <a href="mailto:contacto@ejemplo.com" target="_blank" class="icon gmail">Gmail</a>
+    </div>
+  </footer>
+
+</body>
+</html>
