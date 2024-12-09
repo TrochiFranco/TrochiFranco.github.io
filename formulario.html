@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="proyectodetalentotech_files/style.css">
+  <link rel="icon" type="image/x-icon" href="imagenes/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <script src="proyectodetalentotech_files/script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Formulario de Contacto</h1>
+    <button id="modo-tema" onclick="toggleTema()">🌙 Modo Oscuro</button>
+
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="contacto.html">Contáctanos</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="Reseñas.html">Reseñas</a></li>
+    </ul>
+  </nav>
+  <!-- Formulario de Contacto -->
+  <section>
+    <form action="https://formspree.io/f/mzzbdqne" method="POST">
+      <label>
+        Nombre:
+        <input type="text" name="nombre" required>
+        
+      </label>
+      
+      <label>
+        @Gmail:
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        Teléfono:
+        <input type="tel" name="telefono" required>
+      </label>
+
+      <label>
+        Razón:
+        <textarea name="mensaje" rows="4" required></textarea>
+      </label>
+      
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section>
+    <p>En caso de cualquier consulta adicional, no dude en ponerse en contacto con nosotros a través del formulario anterior o enviándonos un correo electrónico a <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a>. Estamos aquí para ayudarle.</p>
+  </section>
+
+  <nav>
+    <a href="index.html">Volver a Inicio</a>
+  </nav>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Franco Trochi. Todos los derechos reservados.</p>
+    <p>Teléfono: +1 (123) 456-7890 | Email: contacto@ejemplo.com</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com" target="_blank" class="icon instagram">Instagram</a>
+      <a href="https://www.youtube.com" target="_blank" class="icon youtube">YouTube</a>
+      <a href="https://www.facebook.com" target="_blank" class="icon facebook">Facebook</a>
+      <a href="mailto:contacto@ejemplo.com" target="_blank" class="icon gmail">Gmail</a>
+    </div>
+  </footer>
+
+</body>
+</html>
