@@ -1,149 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reseñas</title>
+  <meta name="description" content="Deja tu reseña en nuestro sitio web y lee las opiniones de nuestros clientes sobre nuestros productos y servicios.">
+  <meta name="keywords" content="reseñas, opiniones, productos, servicio, clientes">
+  <meta name="author" content="Franco Trochi">
+  <title>Reseñas de Clientes - Franco Trochi</title>
   <link rel="stylesheet" href="proyectodetalentotech_files/style.css">
-  <link rel="icon" type="image/x-icon" href="imagenes/favicon.png">
+  <link rel="icon" type="image/x-icon" href="imagenes/favicon.png" alt="Icono del sitio">
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
   <script src="proyectodetalentotech_files/script.js" defer></script>
 </head>
 <body>
 
-    <section class="resenas">
-        <nav>
+    <section class="resenas" aria-labelledby="resenas-section">
+        <nav aria-label="Menú principal">
             <ul>
-              <li><a href="index.html">Inicio</a></li>
-              <li><a href="formulario.html">Formulario de Contacto</a></li>
-              <li><a href="contacto.html">Contáctanos</a></li>
-              <li><a href="productos.html">Productos</a></li>
+              <li><a href="index.html" title="Ir al inicio de la página">Inicio</a></li>
+              <li><a href="formulario.html" title="Formulario de contacto">Formulario de Contacto</a></li>
+              <li><a href="contacto.html" title="Página de contacto">Contáctanos</a></li>
+              <li><a href="productos.html" title="Ver productos disponibles">Productos</a></li>
             </ul>
-
           </nav>
           
-          <button id="modo-tema" onclick="toggleTema()">🌙 Modo Oscuro</button>
+          <button id="modo-tema" onclick="toggleTema()" aria-label="Cambiar al modo oscuro">🌙 Modo Oscuro</button>
 
-            <h3>Deja tu Reseña</h3>
-<form action="https://formspree.io/f/mzzbdqne" method="POST" class="form-resena">
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+            <h3 id="resenas-section">Deja tu Reseña</h3>
+            <form action="https://formspree.io/f/mzzbdqne" method="POST" class="form-resena" aria-labelledby="resenas-section">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required aria-label="Escribe tu nombre">
 
-    <label for="comentario">Reseña:</label>
-    <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe tu reseña aquí" required></textarea>
+                <label for="comentario">Reseña:</label>
+                <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe tu reseña aquí" required aria-label="Escribe tu reseña aquí"></textarea>
 
-    <button type="submit">Enviar Reseña</button>
-</form>
+                <button type="submit" aria-label="Enviar reseña">Enviar Reseña</button>
+            </form>
 
+            <h3>Reseñas de Nuestros Últimos Clientes</h3>
 
-
-<h3>Reseñas de Nuestros Ultimos Clientes</h3>
-
-        <div class="resenas-container">
-            <!-- Reseñas existentes -->
-            <div class="resena-card">
-                <p>"Excelente servicio y productos de alta calidad. ¡Recomendado!"</p>
-                <span>- Cliente 1</span>
+            <div class="resenas-container">
+                <!-- Reseñas existentes -->
+                <div class="resena-card">
+                    <p>"Excelente servicio y productos de alta calidad. ¡Recomendado!"</p>
+                    <span>- Cliente 1</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Excelente servicio y productos de alta calidad. ¡Recomendado!"</p>
+                    <span>- Cliente 1</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Excelente servicio y productos de alta calidad. ¡Recomendado!"</p>
+                    <span>- Cliente 1</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Excelente servicio y productos de alta calidad. ¡Recomendado!"</p>
+                    <span>- Cliente 1</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Excelente servicio y productos de alta calidad. ¡Recomendado!"</p>
+                    <span>- Cliente 1</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <div class="resena-card">
+                    <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
+                    <span>- Cliente 2</span>
+                </div>
+                <!-- Más reseñas aquí -->
             </div>
-            <div class="resena-card">
-                <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
-                <span>- Cliente 2</span>
-            </div>
-            <div class="resena-card">
-                <p>"Excelente servicio y productos de alta calidad. ¡Recomendado!"</p>
-                <span>- Cliente 1</span>
-            </div>
-            <div class="resena-card">
-                <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
-                <span>- Cliente 2</span>
-            </div>
-            <div class="resena-card">
-                <p>"Excelente servicio y productos de alta calidad. ¡Recomendado!"</p>
-                <span>- Cliente 1</span>
-            </div>
-            <div class="resena-card">
-                <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
-                <span>- Cliente 2</span>
-            </div>
-            <div class="resena-card">
-                <p>"Excelente servicio y productos de alta calidad. ¡Recomendado!"</p>
-                <span>- Cliente 1</span>
-            </div>
-            <div class="resena-card">
-                <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
-                <span>- Cliente 2</span>
-            </div>
-            <div class="resena-card">
-                <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
-                <span>- Cliente 2</span>
-            </div>
-            <div class="resena-card">
-                <p>"Excelente servicio y productos de alta calidad. ¡Recomendado!"</p>
-                <span>- Cliente 1</span>
-            </div>
-            <div class="resena-card">
-                <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
-                <span>- Cliente 2</span>
-            </div>
-            <div class="resena-card">
-                <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
-                <span>- Cliente 2</span>
-            </div>
-            <div class="resena-card">
-                <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
-                <span>- Cliente 2</span>
-            </div>
-            <div class="resena-card">
-                <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
-                <span>- Cliente 2</span>
-            </div>
-            <div class="resena-card">
-                <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
-                <span>- Cliente 2</span>
-            </div>
-            <div class="resena-card">
-                <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
-                <span>- Cliente 2</span>
-            </div>
-            <div class="resena-card">
-                <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
-                <span>- Cliente 2</span>
-            </div>
-            <div class="resena-card">
-                <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
-                <span>- Cliente 2</span>
-            </div>
-            <div class="resena-card">
-                <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
-                <span>- Cliente 2</span>
-            </div>
-            <div class="resena-card">
-                <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
-                <span>- Cliente 2</span>
-            </div>
-            <div class="resena-card">
-                <p>"Los productos superaron mis expectativas. Volveré a comprar."</p>
-                <span>- Cliente 2</span>
-            </div>
-            <!-- Más reseñas aquí -->
-        </div>
     
-        <!-- Formulario para dejar una nueva reseña -->
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Franco Trochi. Todos los derechos reservados.</p>
-        <p>Teléfono: +1 (123) 456-7890 | Email: contacto@ejemplo.com</p>
-        <div class="social-icons">
-          <a href="https://www.instagram.com" target="_blank" class="icon instagram">Instagram</a>
-          <a href="https://www.youtube.com" target="_blank" class="icon youtube">YouTube</a>
-          <a href="https://www.facebook.com" target="_blank" class="icon facebook">Facebook</a>
-          <a href="mailto:contacto@ejemplo.com" target="_blank" class="icon gmail">Gmail</a>
-        </div>
-      </footer>
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Franco Trochi. Todos los derechos reservados.</p>
+            <p>Teléfono: +1 (123) 456-7890 | Email: contacto@ejemplo.com</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com" target="_blank" class="icon instagram" aria-label="Ir a Instagram">Instagram</a>
+              <a href="https://www.youtube.com" target="_blank" class="icon youtube" aria-label="Ir a YouTube">YouTube</a>
+              <a href="https://www.facebook.com" target="_blank" class="icon facebook" aria-label="Ir a Facebook">Facebook</a>
+              <a href="mailto:contacto@ejemplo.com" target="_blank" class="icon gmail" aria-label="Enviar un correo electrónico">Gmail</a>
+            </div>
+        </footer>
     
-      
-
-
 </body>
 </html>

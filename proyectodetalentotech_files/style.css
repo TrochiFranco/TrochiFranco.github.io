@@ -453,3 +453,10 @@ body.modo-oscuro #modo-tema:hover {
     background-color: #bbb;
     color: #000;
 }
+
+a:focus, a:active {
+    outline: 3px solid #6c757d; /* Gris oscuro */
+    background-color: transparent;
+    color: inherit;
+}
+ 
